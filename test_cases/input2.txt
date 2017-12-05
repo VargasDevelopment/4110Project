@@ -1,0 +1,13 @@
+insert 10
+insert 15
+insert 37
+print
+insert 4
+print
+insert 6
+insert 8
+insert 12
+print
+insert 7
+insert 9
+print

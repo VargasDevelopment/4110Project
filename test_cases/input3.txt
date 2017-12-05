@@ -1,0 +1,17 @@
+insert 76
+insert 32
+insert 99
+insert 12
+insert 2
+insert 89
+print
+delete 32
+print
+insert 45
+delete 2
+print
+insert 112
+insert 49
+print
+delete 76
+print

@@ -1,0 +1,43 @@
+insert 716
+insert 312
+insert 929
+insert 112
+insert 21
+insert 839
+insert 1726
+insert 432
+insert 1879
+insert 142
+insert 200
+insert 899
+print
+delete 432
+delete 112
+print
+insert 1445
+delete 21
+delete 899
+print
+insert 192
+insert 489
+delete 200
+delete 929
+print
+insert 451
+delete 1726
+insert 316
+insert 3112
+insert 730
+insert 888
+insert 219
+insert 539
+insert 2726
+insert 4132
+insert 189
+insert 102
+insert 20
+insert 99
+delete 888
+delete 20
+delete 716
+print
