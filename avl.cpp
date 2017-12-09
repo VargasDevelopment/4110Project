@@ -199,12 +199,43 @@ AvlNode * removeMin(AvlNode * & root)
 	}
 }
 
+
+bool lookUp( const int & info, AvlNode * & root )
+{
+	printf("Looking up Node\n");
+	bool found = false;
+	if(!root)
+		return found;
+
+	if(info < root->element)
+	{
+		printf("going left\n");
+		found = lookUp(info, root->left);
+	}
+	else if(info > root->element)
+	{
+		printf("going right\n");
+		found = lookUp(info, root->right);
+
+	}
+	else if(info == root->element)
+	{	
+		printf("FOUND!\n");
+		return true;
+	}
+	return found;
+
+}
+
+
+
 /**
  * Internal method to remove from a subtree.
  * info is the item to remove.
  * root is the node that roots the subtree.
  * Set the new root of the subtree.
  */
+
 AvlNode* remove( const int & info, AvlNode * & root ) {
 	printf("deleting\n");
 	
@@ -220,7 +251,7 @@ AvlNode* remove( const int & info, AvlNode * & root ) {
 	}
 	else if(info > root->element)
 	{
-		printf("going rightt\n");
+		printf("going right\n");
 		root->right = remove(info, root->right);
 	}
 	else
@@ -336,6 +367,7 @@ int main(int argc, const char * argv[]) {
       break;
     }
   }
+	lookUp(100, root);
   return 0;
 }
 /*
